@@ -13,5 +13,10 @@ module RandomODE
 
     include("sampler.jl")
     export sample_field
+
+    include("assembly.jl")
+    export assemble_system!
     
+    include("solve.jl")
+    export solve!, solve_ensemble!
 end
